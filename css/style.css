@@ -56,7 +56,7 @@ a {
   font-style: normal;
 }
 
-.sr-only {
+/* .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -67,7 +67,7 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 body {
   font-family: var(--main-font);
@@ -77,25 +77,40 @@ body {
 }
 
 .container {
+  max-width: 428px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #31d0aa;
+}
+
+/* MEDIA ---------  TABLET */
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* .container {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-}
+} */
 
 .list {
   list-style: none;
 }
 
-.header-wrapper,
+/* .header-wrapper,
 .menu,
 .menu-items,
 .header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.menu-link,
+/* .menu-link,
 .contacts,
 .button {
   transition: color, background-color var(--main-transition);
@@ -165,10 +180,10 @@ body {
 
 .logo-white {
   color: var(--white);
-}
+} */
 
 /* social-media icons decorate*/
-.social {
+/* .social {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -196,11 +211,13 @@ body {
 
 .social-icon {
   fill: var(--could);
-}
+} */
 
 /* =======   HEARDER   ====== */
 
-header {
+
+
+/* header {
   display: flex;
   height: 72px;
   top: 0;
@@ -254,11 +271,11 @@ header .logo {
 .menu-item:not(:last-child),
 .header-item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 
 /* =======   HERO   ====== */
 
-.hero {
+/* .hero {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -281,11 +298,11 @@ header .logo {
   width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
-}
+} */
 
 /* =======   BENEFITS   ====== */
 
-.benefits {
+/* .benefits {
   padding: 120px 0;
 }
 
@@ -316,11 +333,11 @@ header .logo {
 
 .benefits-property-title {
   margin-bottom: 8px;
-}
+} */
 
 /* =======   ABOUT   ====== */
 
-.about {
+/* .about {
   padding-bottom: 120px;
 }
 
@@ -329,11 +346,11 @@ header .logo {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 24px;
-}
+} */
 
 /* =======   TEAM   ====== */
 
-.team {
+/* .team {
   background: var(--could);
   padding: 120px 0;
 }
@@ -364,11 +381,11 @@ header .logo {
 
 .team-position {
   margin-bottom: 8px;
-}
+} */
 
 /* =======   CUSTOMERS   ====== */
 
-.customers {
+/* .customers {
   padding: 130px 0 120px;
 }
 
@@ -409,11 +426,11 @@ header .logo {
   left: 30px;
   fill: var(--light-slate);
   transition: fill var(--main-transition);
-}
+} */
 
 /* =======   FOOTER  ====== */
 
-footer {
+/* footer {
   background-color: var(--navi-blue);
   padding: 100px 0;
 }
@@ -505,13 +522,13 @@ footer .logo {
   position: absolute;
   right: 24px;
   bottom: 9px;
-}
+} */
 
 
 
 /* =======   MODAL WINDOW  ====== */
 
-.modal-window {
+/* .modal-window {
   position: fixed;
   top: 0;
   left: 0;
@@ -699,11 +716,11 @@ footer .logo {
 .modal-form-button {
   width: 169px;
   margin: 0 auto;
-}
+} */
 
 /* ----------------- PORTFOLIO ------------------------ */
 
-.portfolio {
+/* .portfolio {
   padding: 69px 0 120px;
   border-top: 1px solid var(--cornflower);
 }
@@ -795,7 +812,7 @@ footer .logo {
 
 .portfolio-title {
   margin-bottom: 8px;
-}
+} */
 
 
 
