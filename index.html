@@ -34,6 +34,11 @@
           </li>
         </ul>
       </nav>
+      <button class="burger-button js-open-menu" type="button">
+        <svg class="burger-button-icon" width="32" height="22">
+          <use href="./images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
       <address class="header-contacts">
         <ul class="header-items list">
           <li class="header-item">
@@ -45,20 +50,84 @@
         </ul>
       </address>
     </div>
+
+    <div class="modal-burger js-menu-container">
+      <button class="modal-burger-close-btn modal-close-btn js-close-menu" type="button">
+        <svg class="modal-burger-close" width="8" height="8">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="burger-menu">
+        <ul class="burger-menu-items list">
+          <li class="burger-menu-item">
+            <a class="burger-menu-link burger-menu-link-active" href="./index.html">Studio</a>
+          </li>
+          <li class="burger-menu-item">
+            <a class="burger-menu-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="burger-menu-item">
+            <a class="burger-menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu-wrap">
+        <address class="burger-contacts">
+          <ul class="burger-items list">
+            <li class="burger-item">
+              <a class="burger-item-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="burger-item">
+              <a class="burger-item-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="burger-social social list">
+          <li class="burger-social-item social-item">
+            <a class="burger-social-link social-link" href="instagram.com">
+              <svg class="burger-social-icon social-icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item social-item">
+            <a class="team-social-link social-link" href="twitter.com">
+              <svg class="team-social-icon social-icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item social-item">
+            <a class="team-social-link social-link" href="facebook.com">
+              <svg class="team-social-icon social-icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item social-item">
+            <a class="team-social-link social-link" href="linkedin.com">
+              <svg class="team-social-icon social-icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </header>
 
   <main>
 
-    <!-- <section class="hero">
+    <section class="hero">
       <div class="container">
         <h1 class="hero-title">
           Effective Solutions for Your Business
         </h1>
         <button class="hero-button button" type="button" data-modal-open>Order Service</button>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="benefits">
+    <section class="benefits">
       <div class="container">
         <h2 class="benefits-title sr-only">Our benefits</h2>
         <ul class="benefits-properties list">
@@ -117,9 +186,9 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="about">
+    <section class="about">
       <div class="container">
         <h2 class="about-title title">
           What Are We Doing
@@ -136,9 +205,9 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="team">
+    <section class="team">
       <div class="container">
         <h2 class="team-title title">Our Team</h2>
         <ul class="team-items list">
@@ -284,9 +353,9 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="customers">
+    <section class="customers">
       <div class="container">
         <h2 class="customers-title title">Customers</h2>
         <ul class="customers-list list">
@@ -334,10 +403,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-wrap">
         <div class="footer-descr">
@@ -394,16 +463,15 @@
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
-  <!-- <div class="modal-window is-hidden" data-modal>
+  <div class="modal-window is-hidden" data-modal>
     <div class="modal">
       <button class="modal-close-btn" type="button" data-modal-close>
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
-
       <form class="modal-form" name="modal-form">
         <p class="modal-form-title subtitle">
           Leave your contacts and we will call you back
@@ -448,11 +516,11 @@
         </label>
         <button class="modal-form-button button" type="submit">Send</button>
       </form>
-
     </div>
-  </div> -->
+  </div>
 
-  <!-- <script src="./js/modal.js"></script>  -->
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
