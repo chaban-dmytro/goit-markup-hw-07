@@ -21,80 +21,7 @@
 
 /* =======   COMPONENTS   ====== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -586,6 +513,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1400px;
+  }
+}
+
 /* =======   BENEFITS   ====== */
 
 .benefits {
@@ -613,7 +546,7 @@ body {
   }
 
   .benefits-property {
-    width: 348px;
+    width: 356px;
   }
 }
 
@@ -690,7 +623,7 @@ body {
 
 .team {
   background: var(--could);
-  padding: 96px 0 128px 0;
+  padding: 96px 0;
 }
 
 .team-items {
@@ -734,7 +667,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .team {
-    padding: 120px 0 120px 0;
+    padding: 120px 0;
   }
 }
 
@@ -963,12 +896,11 @@ footer .logo {
 
 .modal {
   position: absolute;
-  top: 10%;
+  top: 0;
   left: 50%;
   transform: translate(-50%);
   max-width: 408px;
   width: 100%;
-  /* height: 576px; */
   padding: 72px 24px 24px 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
